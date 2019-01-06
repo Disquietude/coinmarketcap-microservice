@@ -1,0 +1,19 @@
+{
+  "name": "coinmarketcap-microservice",
+  "version": "1.0.0",
+  "description": "Microservice that makes requests to the CoinMarketCap API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Disquietude",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
