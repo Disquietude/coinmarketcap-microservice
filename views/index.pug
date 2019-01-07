@@ -5,5 +5,28 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title CoinMarketCap Microservice
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css", type="text/css")
   body
-    h1.title CoinMarketCap Microservice
+    .section
+      h1.title CoinMarketCap Microservice
+      .content
+        p Microservice that makes requests to the CoinMarketCap API.
+
+        h2 API Endpoints
+
+        h3 /api/map/:limit?
+
+        p Returns a paginated list of all cryptocurrencies by CoinMarketCap ID.
+
+        p Route Parameters:
+        ul
+          li limit (Optional): Integer from 1-5000. Specifies the number of results to return.
+
+        h3 /api/quotes/:ids/:convert?
+
+        p Returns the latest market quote for 1 or more cryptocurrencies.
+
+        p Route Parameters:
+        ul
+          li ids: String (ex: 1,2). One or more comma-separated cryptocurrency CoinMarketCap IDs. 
+          li convert (Optional): String (ex: BTC). Converts prices to the selected currency. Must be 3 uppercase letters.
